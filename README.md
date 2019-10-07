@@ -1,3 +1,3 @@
-# ShabbyRong's website   
-from ShabbyRong
+# cao's website   
+hex game
 

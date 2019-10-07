@@ -1,43 +1,48 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>教师节快乐！！</title>
-    <link rel="stylesheet" type="text/css"href="../css/color.css">
-    <style>
-    .title{
-        color:darkorange ;
-    }</style>
-    <script type="text/javascript">
-        var n=1;
-        function aggree() {
-            alert("老师节日快乐！！");
-        }
-        function refuse() {
-            while(n<6){
-                alert("接下来您，事事顺心！");
-                n++;  
-                alert("生活开心");
-                n++;
-                alert("学生放心");
-                n++ ;
-                alert("成绩安心");
-                n++; 
-                alert("所以生活还得继续，咱们还得前进，老师！加油啊！");
-                n++;
-                alert("愿老师在未来的日子里，能做点自己想做的事，去一些想去的地方，见一些好久不见的老友，能够闲下来过点自己想要的生活！");
-                n++;
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Canvas Hexagonal Map</title>
+        <style type="text/css">
+            canvas { 
+                border:0;
+                display:block;
+                margin-left: 20px;
+                margin-top: 20px;
+
             }
-        }
-        
-    </script>
-</head>
-<body>
-<h1 class="title">教师节的今天老师您最大！</h1>
-<img class="small_tittle"  src="https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2810644262,4062228962&fm=26&gp=0.jpg" width="200px">
-<h1 id="text1"style="color: black;">老师老师，您辛苦了！
-</h1>
-<button id="b1"onclick="aggree()">做您的学生是我最大的幸运！</button>
-<button id="b2"onclick="refuse()">如果不开心，就点这里</button>
-</body>
+            #body{
+                position: relative;
+            }
+            #hexmap{
+                float: left;
+                border-top: 2px solid red;
+                /*border-bottom: 2px solid red; */
+            }
+            #firster{
+
+            }
+            #later{
+                margin-left: 40px; 
+            }
+            #container{
+                position: absolute;
+                right: 200px;
+                top: 20px;
+                display: inline-block;
+                width: 200px;
+            }
+
+        </style>
+    </head>
+    <body>
+        <canvas id="hexmap" width="720" height="624"></canvas>
+        <div id="container">
+            <button id="firster">AI先手</button>
+            <button id="later">AI后手</button>            
+        </div>
+        <script>
+        </script>
+        <script src="js/main.js"></script>
+    </body>
 </html>
